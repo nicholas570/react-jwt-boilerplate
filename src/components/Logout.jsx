@@ -2,7 +2,8 @@ import React from "react";
 
 const Logout = () => {
   const handleSubmit = () => {
-    // Your code here
+    localStorage.removeItem("Token");
+    alert("Successfully Log out");
   };
 
   return (
